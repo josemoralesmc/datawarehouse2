@@ -1,0 +1,88 @@
+body {
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#abbaab), to(#ffffff));
+  background: linear-gradient(to right, #abbaab, #ffffff);
+  background-size: cover;
+}
+
+.navbarlogin {
+  background-color: #143ECB 2;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 50px;
+}
+
+.ctn-log {
+  -webkit-box-shadow: 0px 3px 3px;
+          box-shadow: 0px 3px 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 8px;
+  background-color: rgba(201, 201, 201, 0.6);
+  height: 500px;
+  width: 750px;
+}
+
+.ctn-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 49%;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+}
+
+.title2 {
+  margin-top: -70px;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.flex-log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.vl {
+  margin-top: 100px;
+  border-left: 1px solid #3e3f3e;
+  height: 300px;
+}
+
+.flexI {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boton {
+  margin-top: 25px;
+}
+/*# sourceMappingURL=login.css.map */

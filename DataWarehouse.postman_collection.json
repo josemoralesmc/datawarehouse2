@@ -1,0 +1,1079 @@
+{
+	"info": {
+		"_postman_id": "7065e13d-c540-4d32-9941-a840b1df4eee",
+		"name": "DataWarehouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registrar Usuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear una region",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/region",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todas las regiones",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/region",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar region por id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/region?id=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar region por id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/region?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los paises",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/region/pais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region",
+						"pais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un pais",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/region/pais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region",
+						"pais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar pais",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/region/pais?id=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region",
+						"pais"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar pais",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/region/pais?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region",
+						"pais"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todas las ciudades",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/region/pais/ciudad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region",
+						"pais",
+						"ciudad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Ciudad",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/region/pais/ciudad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region",
+						"pais",
+						"ciudad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Ciudad",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/region/pais/ciudad?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region",
+						"pais",
+						"ciudad"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Ciudad",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/region/pais/ciudad?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region",
+						"pais",
+						"ciudad"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear compania",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre_compania\": \"facebook\",\r\n    \"direccion\": \"Usa\",\r\n    \"email\": \"facebook@fb.com\",\r\n    \"telefono\": \"123456\",\r\n    \"ciudad_id\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/compania",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"compania"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todas la companias",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/compania",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"compania"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar una compania",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre_compania\": \"whatsapp\",\r\n    \"direccion\": \"Usa\",\r\n    \"email\": \"facebook@fb.com\",\r\n    \"telefono\": 123456,\r\n    \"ciudad_id\": \"2\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/compania?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"compania"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar compania",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/compania?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"compania"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar usuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/usuarios?id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usuarios"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Usuarios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/usuarios?id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usuarios"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los contactos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/contactos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"contactos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Contacto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/contactos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"contactos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Contacto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombre_contacto\": \"Pepe\",\r\n        \"apellido_contacto\": \"asd\",\r\n        \"interes_contacto\": 50,\r\n        \"email_contacto\": \"asdasdf\",\r\n        \"compania_contacto\": 18,\r\n        \"ciudad_contacto\": 1,\r\n        \"direccion_contactos\": \"asdfadsf\",\r\n        \"canales_contacto\": \"hjjjj\",\r\n        \"cargo_contacto\": \"ajjjsd\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/contactos?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"contactos"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Contacto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/contactos?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"contactos"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Ciudad_pais",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api//region/pais/ciudad_pais",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"",
+						"region",
+						"pais",
+						"ciudad_pais"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busqueda del search",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/contactos/search?busqueda=%mo%",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"contactos",
+						"search"
+					],
+					"query": [
+						{
+							"key": "busqueda",
+							"value": "%mo%"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seleccionar Region",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImFwZWxsaWRvX3VzdWFyaW8iOiJtb3JhbGVzMiIsImVtYWlsIjoiam9zZWpvc2UyIiwicGVyZmlsIjoxfSwiaWF0IjoxNjE2MTI0ODQ2fQ.IhxyaEQ7G1CYCsl2uM9g4i7DGvEYDAEFLxiJ8PCDNYs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/region/pais/region_pais?id=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"region",
+						"pais",
+						"region_pais"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

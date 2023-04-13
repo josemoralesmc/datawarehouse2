@@ -1,0 +1,294 @@
+@charset "UTF-8";
+.ColorNav {
+  background-color: rgba(201, 201, 201, 0.6);
+}
+
+.letra {
+  margin-right: 15px;
+  color: black;
+  font-family: 'Rubik', sans-serif;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: gray;
+}
+
+.nav-tamaño {
+  height: 50px;
+}
+
+.imgnav {
+  margin-left: 20px;
+  width: 60px;
+  height: 56px;
+}
+
+.Section-Usuarios {
+  display: none;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#abbaab), to(#ffffff));
+  background: linear-gradient(to right, #abbaab, #ffffff);
+}
+
+.FormUsuario {
+  -webkit-box-shadow: 0px 3px 3px;
+          box-shadow: 0px 3px 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border-radius: 8px;
+  background-color: rgba(201, 201, 201, 0.6);
+  height: 500px;
+  width: 500px;
+}
+
+.title {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  color: gray;
+}
+
+.ancho {
+  width: 330px;
+  margin: 0px;
+  margin-left: 5px;
+}
+
+.RpP {
+  margin-top: 9px;
+  width: 350px;
+  margin-left: 10px;
+}
+
+.labelS {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.CentrarB {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.table {
+  width: 85%;
+  background-color: rgba(225, 226, 226, 0.6);
+  border-radius: 5px;
+}
+
+.title {
+  margin-left: 7%;
+  color: #4f524e;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.bt {
+  margin-right: 8%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btndelete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Compañiainput {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formciudad {
+  width: 25%;
+}
+
+.SectionContactos {
+  display: none;
+}
+
+.searchContactos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  margin-left: 7.5%;
+  margin-right: 0;
+}
+
+.lupa {
+  margin-left: 8px;
+  color: #4f524e;
+}
+
+.th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flecha {
+  margin-top: -6px;
+}
+
+.btnOrdenar {
+  margin: 0px;
+  padding: 0px;
+  width: 20px;
+  height: 25px;
+}
+
+.barra {
+  margin: 0px;
+  padding: 0px;
+}
+
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.closebtn {
+  margin-top: 5px;
+}
+
+.btnagregar {
+  margin-bottom: 10%;
+}
+
+/* ModalContacto */
+.titleModal {
+  background: -webkit-gradient(linear, left top, right top, from(#abbaab), to(#ffffff));
+  background: linear-gradient(to right, #abbaab, #ffffff);
+  padding: 10px;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.contactosform {
+  width: 200px;
+}
+
+.email {
+  font-size: 12px;
+}
+
+.inputcompania {
+  margin-left: 100px;
+}
+
+.btnlenght {
+  margin-top: 216.95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+.Ncontactos {
+  color: #26a69a;
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+.TableContactos {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.TableContactos2 {
+  width: 100%;
+}
+
+.sectionRegion {
+  display: none;
+}
+
+.modalRegion {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: rgba(225, 226, 226, 0.6);
+  border-radius: 5px;
+}
+
+.TablaRegion {
+  margin-left: 7%;
+  border: 5px black;
+  width: 10%;
+  padding-bottom: 20px;
+}
+
+.titleRegion {
+  padding-top: 20px;
+  margin-left: 7%;
+  color: #4f524e;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 26px;
+}
+/*# sourceMappingURL=style.css.map */

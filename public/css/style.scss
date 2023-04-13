@@ -1,0 +1,294 @@
+
+
+//  --------- navbar ----------
+.ColorNav{
+    background-color: rgba(201, 201, 201, 0.6);
+}
+
+.letra{
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+    font-family: 'Rubik', sans-serif;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+a:hover, a:active{
+    color: gray;
+}
+
+.nav-tamaño{
+    height: 50px;
+}
+
+.imgnav{
+    margin-left: 20px;
+width: 60px;
+height: 56px;
+}
+
+
+// ---------  Seccion de usuarios -----------
+
+.Section-Usuarios{
+    display: none;
+}
+
+body {
+    background: linear-gradient(to right, #abbaab, #ffffff);
+}
+
+
+
+.FormUsuario{
+    box-shadow: 0px 3px 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 8px;
+    background-color: rgba(201, 201, 201, 0.6);
+    height: 500px;
+    width: 500px;
+}
+
+.title{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: gray;
+}
+
+.ancho{
+    width: 330px;
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.RpP{
+    margin-top: 9px;
+    width: 350px;
+    margin-left: 10px;
+}
+
+.labelS{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.CentrarB{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// region ciudad
+
+
+ul, #myUL {
+    list-style-type: none;
+  }
+  
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .caret {
+    cursor: pointer;
+    user-select: none; 
+  }
+  
+  
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  
+  .caret-down::before {
+    transform: rotate(90deg);
+  }
+  
+  
+  .nested {
+    display: none;
+  }
+  
+ 
+  .active {
+    display: block;
+  }
+  
+  // Section compañias
+
+  
+
+  .table{
+      width: 85%;
+      background-color: rgba(225, 226, 226, 0.6);
+      border-radius: 5px;
+  }
+
+  .title{
+      margin-left: 7%;
+    color: rgb(79, 82, 78);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.bt{
+    margin-right: 8%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btndelete{
+    display: flex;
+    align-items: center;
+}
+
+.Compañiainput{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formciudad{
+    width: 25%;
+}
+
+// Section Contactos 
+
+.SectionContactos{
+    display: none;
+}
+
+.searchContactos{
+    display: flex;
+    align-items:center;
+    width: 15%;
+    margin-left: 7.5%;
+    margin-right: 0;
+}
+
+.lupa{
+    margin-left: 8px;
+    color: rgb(79, 82, 78);
+}
+
+.th{
+    display: flex;
+}
+
+.flecha{
+    margin-top: -6px;
+}
+
+.btnOrdenar{
+    margin: 0px;
+    padding: 0px;
+    width: 20px;
+    height: 25px;
+}
+
+.barra{
+    margin: 0px;
+    padding: 0px;
+}
+
+.check{
+    
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0;
+    margin-top: 5px;
+    
+}
+
+.closebtn{
+    margin-top: 5px;
+}
+
+.btnagregar{
+    margin-bottom: 10%;
+}
+
+/* ModalContacto */
+
+.titleModal{
+background: linear-gradient(to right, #abbaab, #ffffff);
+ padding: 10px;
+ margin: 0;
+ font-family: 'Noto Sans', sans-serif;
+}
+
+.contactosform{
+    width: 200px;
+}
+
+.email{
+    font-size: 12px;
+}
+
+.inputcompania{
+    margin-left: 100px;
+}
+
+.btnlenght{
+    margin-top: 216.95px;
+    display: flex;
+    display: none;
+}
+
+.Ncontactos{
+color: #26a69a;
+margin-right: 40px;
+font-size: 20px;
+}
+
+.TableContactos{
+ width: 100%; display: block;
+  margin-left: auto;
+   margin-right: auto;
+   width: 75%;
+}
+.TableContactos2{
+   width: 100%;
+}
+
+// Section Region
+
+.sectionRegion{
+    display: none;
+}
+
+.modalRegion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: rgba(225, 226, 226, 0.6);
+    border-radius: 5px;
+}
+
+.TablaRegion{
+    margin-left: 7%;
+    border: 5px black;
+    width: 10%;
+    padding-bottom: 20px;
+}
+
+.titleRegion{
+    padding-top: 20px;
+    margin-left: 7%;
+    color: rgb(79, 82, 78);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 26px;
+}

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Datawarehouse</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+
+    <!-- Nav bar -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark ColorNav">
+      <div class="container-fluid nav-tamaño">
+        <a class="navbar-brand" href="#"><img class="imgnav" src="./img/logo.png" alt=""></a>
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="btnContactos" class="letra" aria-current="page" href="#">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a id="btnCompanias" class="letra" href="#">Compañias</a>
+          </li>
+          <li class="nav-item">
+            <a id="btnUsuarios" class="letra" href="#">Usuarios</a>
+          </li>
+          <li class="nav-item">
+            <a id="btnRegion" class="letra" href="#">Region/Ciudad</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </nav>
+  </header>
+  <!--  Section Contactos -->
+
+  <section id="SectionContactos" class="SectionContactos">
+    <h2 class="title">Contactos</h2>
+    <div class="input-field col s6 searchContactos">
+      <input id="SearchInput" type="text" class="validate" style="border-bottom: 1px solid rgb(79, 82, 78);">
+      <label for="last_name">Buscar</label>
+      <i id="SearchClick" class="material-icons lupa">search</i>
+    </div>
+    <div class="TableContactos">
+      <table class="table table-borderless TableContactos2">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Contacto</th>
+            <th scope="col">País/Región</th>
+            <th scope="col">Compañía </th>
+            <th scope="col">Cargo </th>
+            <th scope="col">Interes </th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tablacontactos">
+          <tr>
+
+            <th scope="row" class="check">
+              <p style="margin: 0;">
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </th>
+            <th scope="row" id="nombres">
+              <h6 class="email"> </h6>
+
+            <td class="btndelete"><a href="#idModal" class="btn modal-trigger btn-small">Editar</a>
+              <a href="#modaldelete" class="modal-trigger"><i class="material-icons"
+                  style="cursor: pointer;">close</i></a>
+            </td>
+
+        </tbody>
+      </table>
+    </div>
+    <!-- Modal Crear Contacto -->
+    <div class="container section" style="z-index: 2; height: 60%;">
+      <a href="#idModal" class="btn modal-trigger position-absolute top-0 end-0 bt"
+        style="width: 180px; margin-top: 216.95px;">Agregar contacto</a>
+      <div id="idModal" class="modal" style="z-index: 2;">
+        <div class="modal-content" style="padding: 0%;">
+          <h6 class="titleModal">Nuevo Contacto</h6>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="NombreContacto" type="text" class="validate">
+                  <label for="icon_prefix4">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="ApellidoContacto" type="tel" class="validate">
+                  <label for="icon_telephone4">Apellido</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">assignment</i>
+                  <input id="CargoContacto" type="tel" class="validate">
+                  <label for="icon_telephone8">Cargo</label>
+                </div>
+
+
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="EmailContacto" type="tel" class="validate">
+                <label for="icon_telephone3">Email</label>
+              </div>
+
+              <div class="input-field col s6" style="margin-top: 0px;">
+                <i class="material-icons prefix" style="margin-top: 20px;">business</i>
+                <div class="input-field col s12" style="width: 400px; height: 15px; padding-left: 50px;">
+
+                  <select id="SelectNC" class="form-select form-select-sm ">
+
+                  </select>
+                </div>
+              </div>
+            </form>
+            <hr>
+
+
+            <div class="input-field col s12">
+              <select id="paises" class="form-select form-select-sm SlcPais paises">
+
+              </select>
+
+            </div>
+            <div class="input-field col s12">
+              <select id="seleccionarciudad" class="form-select form-select-sm" disabled>
+                <option value="" disabled selected>Seleccionar una Ciudad</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+
+            </div>
+            <div class="input-field col s6">
+              <input placeholder="Ingresar una dirección" id="DireccionContacto" type="text">
+              <label for="first_name">Dirección</label>
+            </div>
+            <div class="input-field col s12">
+              <select id="InteresContacto" class="form-select form-select-sm">
+                <option value="" disabled selected>Interes</option>
+                <option value="0">0%</option>
+                <option value="25">25%</option>
+                <option value="50">50%</option>
+                <option value="75">75%</option>
+                <option value="100">100%</option>
+              </select>
+
+            </div>
+            <hr>
+            <div class="input-field col s12">
+              <select id="CanalContacto" class="form-select form-select-sm">
+                <option value="" disabled selected>Seleccionar una Canal</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instragram">Instragram</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Telefono">Telefono</option>
+                <option value="Twitter">Twitter</option>
+              </select>
+
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="CuentaUsuarioContacto" type="text" class="validate">
+              <label for="icon_prefix3">Cuenta de usuario</label>
+            </div>
+
+          </div>
+          <div class="modal-footer position-absolute bottom-0 end-0" style="margin-top: 20px;">
+            <a id="CrearContactobt" href="#SectionContactos" class="btn modal-close">Crear Contacto</a>
+            <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+          </div>
+
+        </div>
+      </div>
+      <!-- Modal Editar Contacto -->
+
+      <div id="EditarContacto" class="modal" style="z-index: 2;">
+        <div class="modal-content" style="padding: 0%;">
+          <h6 class="titleModal">Editar Contacto</h6>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="NombreContactoE" type="text" class="validate">
+                  <label for="icon_prefix4">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="ApellidoContactoE" type="tel" class="validate">
+                  <label for="icon_telephone4">Apellido</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">assignment</i>
+                  <input id="CargoContactoE" type="tel" class="validate">
+                  <label for="icon_telephone8">Cargo</label>
+                </div>
+
+
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="EmailContactoE" type="tel" class="validate">
+                <label for="icon_telephone3">Email</label>
+              </div>
+
+              <div class="input-field col s6" style="margin-top: 0px;">
+                <i class="material-icons prefix" style="margin-top: 20px;">business</i>
+                <div class="input-field col s12" style="width: 400px; height: 15px; padding-left: 50px;">
+
+                  <select id="SelectNCE" class="form-select form-select-sm">
+
+                  </select>
+                </div>
+              </div>
+            </form>
+            <hr>
+
+
+            <div class="input-field col s12">
+              <select id="paisesE" class="form-select form-select-sm SlcPaisE paisesE">
+
+              </select>
+
+            </div>
+            <div class="input-field col s12">
+              <select id="seleccionarciudadE" class="form-select form-select-sm" disabled>
+                <option value="" disabled selected>Seleccionar una Ciudad</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+
+            </div>
+            <div class="input-field col s6">
+              <input placeholder="Ingresar una dirección" id="DireccionContactoE" type="text">
+              <label for="first_name">Dirección</label>
+            </div>
+            <div class="input-field col s12">
+              <select id="InteresContactoE" class="form-select form-select-sm">
+                <option value="" disabled selected>Interes</option>
+                <option value="0">0%</option>
+                <option value="25">25%</option>
+                <option value="50">50%</option>
+                <option value="75">75%</option>
+                <option value="100">100%</option>
+              </select>
+
+            </div>
+            <hr>
+            <div class="input-field col s12">
+              <select id="CanalContactoE" class="form-select form-select-sm">
+                <option value="" disabled selected>Seleccionar una Canal</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instragram">Instragram</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Telefono">Telefono</option>
+                <option value="Twitter">Twitter</option>
+              </select>
+
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="CuentaUsuarioContactoE" type="text" class="validate">
+              <label for="icon_prefix3">Cuenta de usuario</label>
+            </div>
+
+          </div>
+          <div class="modal-footer position-absolute bottom-0 end-0" style="margin-top: 20px;">
+            <a id="EditarContactobt" href="#SectionContactos" class="btn modal-close">Editar Contacto</a>
+            <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div id="Checklist" class="position-absolute top-0 start-50 btnlenght">
+        <p class="Ncontactos" id="valuecompania"></p>
+        <button class="btn modal-close" id="eliminarcheck" style="margin-left: 5px;">Eliminar</button>
+      </div>
+
+
+      <!-- Modal Elimiar Contacto -->
+      <div id="modaldelete" class="modal" style="height: 160px; width: 20%;">
+        <div class="modal-content">
+          <h6 style="font-family:'Noto Sans', sans-serif;">¿Eliminar Contacto?</h6>
+        </div>
+        <div class="modal-footer">
+          <a id="EliminarContacto" href="#SectionContactos" class="btn modal-close">Eliminar</a>
+          <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+        </div>
+      </div>
+
+
+  </section>
+
+
+
+  <!--  Section Usuarios -->
+
+  <section id="SectionUsuarios" class="Section-Usuarios">
+    <a class="waves-effect waves-light btn modal-trigger bt float-end" id="modalusuarios" href="#usuarios">Ver
+      Usuarios</a>
+    <div id="usuarios" class="modal">
+      <div class="modal-content" style="padding: 0%;">
+        <h6 class="titleModal">Usuarios</h6>
+
+      </div>
+      <table style="margin-left: 55px;">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Email</th>
+            <th scope="col">Perfil</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+
+        <tbody id="tablausuarios">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      </thead>
+      <div class="modal-footer">
+        <a href="#SectionUsuarios" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+    <form class="FormUsuario" id="FormUsuarios">
+      <h2 class="text-center title">Crear Usuario</h2>
+      <div class="row mb-3">
+        <label for="Nombre" class="col-sm-2 col-form-label col-form-label-sm labelS">Nombre:</label>
+        <div class="col-sm-10" style="padding-right: 30px; height: 20px;">
+          <input type="text" class="form-control form-control-sm ancho" id="Nombre">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="Apellido" class="col-sm-2 col-form-label col-form-label-sm labelS">Apellido:</label>
+        <div class="col-sm-10" style="padding-right: 30px; height: 20px;">
+          <input type="text" class="form-control form-control-sm ancho" id="Apellido">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label col-form-label-sm labelS">Email:</label>
+        <div class="col-sm-10" style="padding-right: 30px; height: 20px;">
+          <input type="email" class="form-control form-control-sm ancho" id="inputEmail3">
+        </div>
+      </div>
+      <div style="display: flex;">
+        <label for="Perfil" class="col-sm-2 col-form-label col-form-label-sm labelS">Perfil:</label>
+        <select id="Perfil" class="form-select" aria-label="Default select example"
+          style="background-color: transparent;">
+          <option disabled selected>Selecionar</option>
+          <option value="1">Administrador</option>
+          <option value="2">Normal</option>
+        </select>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label col-form-label-sm labelS">Clave:</label>
+        <div class="col-sm-10" style="padding-right: 30px; height: 20px;">
+          <input type="password" class="form-control form-control-sm ancho" id="inputPassword3">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputRepeatPassword" class="col-sm-2 col-form-label col-form-label-sm labelS">Repetir
+          Clave:</label>
+        <div class="col-sm-10" style="padding-right: 30px; height: 20px;">
+          <input type="password" class="form-control form-control-sm RpP" id="inputRepeatPassword">
+        </div>
+      </div>
+      <button type="reset" id="BotonUsuario" class="btn btn-secondary btn-small CentrarB">Crear</button>
+    </form>
+  </section>
+
+
+  <!-- Modal Eliminar Usuario -->
+
+  <div id="deleteusuario" class="modal" style="height: 160px; width: 20%;">
+    <div class="modal-content">
+      <h6 style="font-family:'Noto Sans', sans-serif;">¿Eliminar Usuario?</h6>
+    </div>
+    <div class="modal-footer">
+      <a href="#SectionUsuarios" id="eliminarusuario" class="btn modal-close">Aceptar</a>
+      <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+    </div>
+  </div>
+
+  <!-- Modal Actualizar Usuario -->
+
+  <div id="ActualizarUsuario" class="modal" style="height: 400px;">
+    <div class="modal-content" style="padding: 0%;">
+      <h6 class="titleModal">Editar Usuario</h6>
+    </div>
+    <div class="row">
+      <form id="miForm" class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="ActualizarNombre" type="text" class="validate">
+            <label for="icon_prefix1">Nombre Usuario</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="ActualizarApellido" type="tel" class="validate">
+            <label for="icon_telephone1">Apellido</label>
+          </div>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mail</i>
+          <input id="ActualizarMail" type="tel" class="validate">
+          <label for="icon_telephone2">Email</label>
+        </div>
+        <div class="input-field col s6">
+          <div style="display: flex;">
+            <i class="material-icons prefix">account_circle</i>
+            <select id="ActualizarPerfil" class="form-select" aria-label="Default select example"
+              style="background-color: transparent; margin-left:50px;">
+              <option disabled selected>Selecionar Perfil</option>
+              <option value="1">Administrador</option>
+              <option value="2">Normal</option>
+            </select>
+          </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id="UsuarioActualizar" class="btn modal-close">Actualizar</a>
+      <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+    </div>
+  </div>
+  </form>
+  </div>
+
+  </div>
+
+  <!-- Section Compañias -->
+
+  <section id="SectionCompanias" class="Section-Companias">
+    <div id="test-slider"></div>
+
+    <h2 class="title">Compañías</h2>
+
+    <!-- Modal Agregar Compañia -->
+
+    <a class="waves-effect waves-light btn modal-trigger bt float-end" href="#modal1">Agregar Compañía</a>
+    <div id="modal1" class="modal" style="height: 400px;">
+      <div class="modal-content" style="padding: 0%;">
+        <h6 class="titleModal">Nueva Compañía</h6>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">business</i>
+              <input id="nombreCompania" type="text" class="validate">
+              <label for="icon_prefix1">Nombre Compañía</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">phone</i>
+              <input id="telefonocompania" type="tel" class="validate">
+              <label for="icon_telephone1">Telefono</label>
+            </div>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">location_on</i>
+            <input id="direccioncompania" type="text" class="validate">
+            <label for="icon_prefix2">Dirección</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">mail</i>
+            <input id="emailcompania" type="tel" class="validate">
+            <label for="icon_telephone2">Email</label>
+          </div>
+      </div>
+      <div class="Compañiainput">
+        <select id="selectcompania" class="form-select" aria-label="Default select example">
+        </select>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" id="crearcompaniabt" class="btn modal-close">Crear</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+    </form>
+    </div>
+
+    </div>
+    <!-- Modal Actualizar Compañia -->
+
+    <div id="modalA" class="modal" style="height: 400px;">
+      <div class="modal-content" style="padding: 0%;">
+        <h6 class="titleModal">Editar Compañía</h6>
+      </div>
+      <div class="row">
+        <form id="miForm" class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">business</i>
+              <input id="Actualizarnombre" type="text" class="validate">
+              <label for="icon_prefix1">Nombre Compañía</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">phone</i>
+              <input id="Actualizartelefono" type="tel" class="validate">
+              <label for="icon_telephone1">Telefono</label>
+            </div>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">location_on</i>
+            <input id="Actualizardireccion" type="text" class="validate">
+            <label for="icon_prefix2">Dirección</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">mail</i>
+            <input id="Actualizarmail" type="tel" class="validate">
+            <label for="icon_telephone2">Email</label>
+          </div>
+      </div>
+      <div class="Compañiainput">
+        <select id="selectcompania2" class="form-select" aria-label="Default select example">
+          <option id="companiavalue" selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" id="Actualizarcompania" class="btn modal-close">Actualizar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+    </form>
+    </div>
+
+    </div>
+
+    <!-- Modal Eliminar Compañia -->
+
+    <div id="deletecompañia" class="modal" style="height: 160px; width: 20%;">
+      <div class="modal-content">
+        <h6 style="font-family:'Noto Sans', sans-serif;">¿Eliminar Compañía?</h6>
+      </div>
+      <div class="modal-footer">
+        <a href="#SectionCompanias" id="deletecompañia2" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+
+    <!-- --------- -->
+
+    <div class="TablaBack">
+      <table class="table position-absolute top-50 start-50 translate-middle table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr>
+
+            <td>
+
+              <div class="btndelete" id="btndelete"> <a id="editabtn"
+                  class="waves-effect waves-light btn modal-trigger btn btn-outline-dark btn-small"
+                  href="#modal1">Editar</a>
+                <a href="#deletecompañia" class="modal-trigger"><i class="material-icons"
+                    style="cursor: pointer;">close</i></a>
+            </td>
+    </div>
+    </tr>
+
+    </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section class="sectionRegion" id="sectionRegion">
+    <h2 class="title">Region/Ciudad</h2>
+    <div style="margin-left: 55%; margin-bottom: 20px;">
+      <a class="waves-effect waves-light btn modal-trigger bt " href="#AgregarRegion">Agregar Region</a>
+      <a class="waves-effect waves-light btn modal-trigger bt " href="#AgregarPais">Agregar Pais</a>
+      <a class="waves-effect waves-light btn modal-trigger bt " href="#AgregarCiudad">Agregar Ciudad</a>
+    </div>
+    <div class="modalRegion">
+      <!-- Tabla Region -->
+      <div style="display: flex; justify-content: space-evenly;">
+        <div>
+          <p class="titleRegion">Regiones</p>
+          <div class="TablaRegion">
+            <table class="table table-bordered " style="width: 170px;">
+              <thead>
+                <tr>
+                  <th scope="col">Regiones</th>
+                  <th scope="col">Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="RegionesNombres">
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!--  Tabla Pais -->
+        <div>
+          <p class="titleRegion">Paises</p>
+          <div class="TablaRegion">
+            <table class="table table-bordered ">
+              <thead>
+                <tr>
+                  <th scope="col">Region</th>
+                  <th scope="col">Pais</th>
+                  <th scope="col">Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="NombrePaises">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!--  Tabla Ciudad -->
+        <div>
+          <p class="titleRegion">Ciudades</p>
+          <div class="TablaRegion">
+            <table class="table table-bordered ">
+              <thead>
+                <tr>
+                  <th scope="col">Region</th>
+                  <th scope="col">Pais</th>
+                  <th scope="col">Ciudades</th>
+                  <th scope="col">Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="NombreCiudades">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Agregar Region -->
+
+    <div id="AgregarRegion" class="modal" style="height: 230px; width: 20%;">
+      <div class="modal-content" style="padding: 0%;">
+        <h6 class="titleModal">Agregar Region</h6>
+        <div class="input-field col s6" style="padding: 10px;">
+          <input id="NombreRegion" type="tel" class="validate">
+          <label for="Region">Nombre de la region</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#sectionRegion" id="AgregarRegionbtn" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+    <!-- Modal Agregar Pais -->
+
+    <div id="AgregarPais" class="modal" style="height: 270px; width: 25%;">
+      <div class="modal-content" style="padding: 0%;">
+        <h6 class="titleModal">Agregar Pais</h6>
+        <div style="padding: 10px;">
+          <select id="SelectRegion" class="form-select" aria-label="Default select example">
+            <option id="companiavalue" selected>Seleccione una Region</option>
+          </select>
+        </div>
+        <div class="input-field col s6" style="padding: 10px;">
+          <input id="NombrePais" type="tel" class="validate">
+          <label for="pais">Nombre del Pais</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#sectionRegion" id="AgregarPaisbt" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+    <!-- Modal Agregar Ciudad -->
+
+    <div id="AgregarCiudad" class="modal" style="height: 330px; width: 25%;">
+      <div class="modal-content" style="padding: 0%;">
+        <h6 class="titleModal">Agregar Ciudad</h6>
+        <div style="padding: 10px;">
+          <select id="SelectRegion2" class="form-select seleccionaRegion" aria-label="Default select example">
+            <option selected>Seleccione una Region</option>
+          </select>
+        </div>
+        <div style="padding: 10px;">
+          <select id="Selectpais" class="form-select " aria-label="Default select example">
+            <option selected>Seleccione un pais</option>
+          </select>
+        </div>
+        <div class="input-field col s6" style="padding: 10px;">
+          <input id="NombreCiudad" type="tel" class="validate">
+          <label for="icon_telephone1">Nombre de la Ciudad</label>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#sectionRegion" id="AgregarCiudadBt" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+
+
+    <!-- Modal Eliminar Region -->
+
+    <div id="deleteRegion" class="modal" style="height: 200px; width: 20%;">
+      <div class="modal-content">
+        <h6 style="font-family:'Noto Sans', sans-serif;">¿Eliminar Region?</h6>
+        <h6 style="font-family:'Noto Sans', sans-serif; font-size: 12px;">Se eliminaran todos los
+          paises/ciudades/compañias/contactos que
+          se encuentren en esta region</h6>
+      </div>
+      <div class="modal-footer">
+        <a href="#sectionRegion" id="deleteRegionbt" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+    <!-- Modal Eliminar Pais -->
+
+    <div id="deletepais" class="modal" style="height: 200px; width: 20%;">
+      <div class="modal-content">
+        <h6 style="font-family:'Noto Sans', sans-serif;">¿Eliminar Pais?</h6>
+        <h6 style="font-family:'Noto Sans', sans-serif; font-size: 12px;">Se eliminaran todos las
+          ciudades/compañias/contactos que se
+          encuentren en este pais</h6>
+      </div>
+      <div class="modal-footer">
+        <a href="#sectionRegion" id="DeletePaisbt" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+    <!-- Modal Eliminar Ciudad -->
+
+    <div id="deleteCiudad" class="modal" style="height: 150px; width: 20%;">
+      <div class="modal-content">
+        <h6 style="font-family:'Noto Sans', sans-serif;">¿Eliminar Ciudad?</h6>
+        <h6 style="font-family:'Noto Sans', sans-serif; font-size: 12px;">Se eliminaran todos las compañias/contactos
+          que se
+          encuentren en esta ciudad</h6>
+      </div>
+      <div class="modal-footer">
+        <a href="#sectionRegion" id="DeleteCiudadbt" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+
+
+
+    <!-- Modal Editar Region -->
+
+    <div id="EditarRegion" class="modal" style="height: 230px; width: 20%;">
+      <div class="modal-content" style="padding: 0%;">
+        <h6 class="titleModal">Editar Region</h6>
+        <div class="input-field col s6" style="padding: 10px;">
+          <input id="NuevoNombreRegion" type="tel" class="validate">
+          <label for="Region">Nombre de la region</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#sectionRegion" id="EditarRegionbt" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+    <!-- Modal Editar Pais -->
+
+    <div id="EditarPais" class="modal" style="height: 270px; width: 25%;">
+      <div class="modal-content" style="padding: 0%;">
+        <h6 class="titleModal">Editar Pais</h6>
+        <!--  <div style="padding: 10px;">
+          <select id="SelectRegion" class="form-select" aria-label="Default select example">
+            <option id="companiavalue" selected>Seleccione una Region</option>
+          </select>
+        </div> -->
+        <div class="input-field col s6" style="padding: 10px;">
+          <input id="NuevoNombrePais" type="tel" class="validate">
+          <label for="pais">Nombre del Pais</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#sectionRegion" id="EditarBtPais" class="btn modal-close">Aceptar</a>
+        <button class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+      </div>
+    </div>
+    <!-- Modal Editar Ciudad -->
+
+    <div id="EditarCiudad" class="modal" style="height: 250px; width: 25%;">
+      <form>
+        <div class="modal-content" style="padding: 0%;">
+          <h6 class="titleModal">Editar Ciudad</h6>
+          <div class="input-field col s6" style="padding: 10px;">
+            <input id="NuevoNombreCiudad" type="tel" class="validate">
+            <label for="icon_telephone1">Nombre de la Ciudad</label>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#sectionRegion" id="EditarCiudadbt" class="btn modal-close">Aceptar</a>
+          <button type="reset" class="btn modal-close" style="margin-left: 5px;">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Navbar content -->
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+    <script src="./js/companias.js"></script>
+    <script src="./js/usuarios.js"></script>
+    <script src="./js/Region.js"></script>
+    <script src="./js/contactos.js"></script>
+
+</body>
+
+</html>
